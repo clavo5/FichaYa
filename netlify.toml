@@ -1,0 +1,10 @@
+# Configuración de Netlify para FichaYa
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Redirige todas las rutas a index.html (app de una sola página)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
